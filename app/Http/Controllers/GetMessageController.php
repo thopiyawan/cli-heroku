@@ -4,12 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use LINE\LINEBot;
+
 use LINE\LINEBot\HTTPClient;
 use LINE\LINEBot\HTTPClient\CurlHTTPClient;
 
-
 use LINE\LINEBot\MessageBuilder;
+
 use LINE\LINEBot\MessageBuilder\TextMessageBuilder;
 use LINE\LINEBot\MessageBuilder\StickerMessageBuilder;
 use LINE\LINEBot\MessageBuilder\ImageMessageBuilder;
@@ -37,8 +37,8 @@ use LINE\LINEBot\MessageBuilder\TemplateBuilder\ConfirmTemplateBuilder;
 use LINE\LINEBot\MessageBuilder\TemplateBuilder\ImageCarouselTemplateBuilder;
 use LINE\LINEBot\MessageBuilder\TemplateBuilder\ImageCarouselColumnTemplateBuilder;
 
-define('LINE_MESSAGE_CHANNEL_SECRET','949b099c23a7c9ca8aebe11ad9b43a52');
-define('LINE_MESSAGE_ACCESS_TOKEN','qFLN6cTuyvSWdbB1FHgUBEsD9hM66QaW3+cKz/LsNkwzMrBNZrBkH9b1zuCGp9ks0IpGRLuT6W1wLOJSWQFAlnHT/KbDBpdpyDU4VTUdY6qs5o1RTuCDsL3jTxLZnW1qbgmLytIpgi1X1vqKKsYywAdB04t89/1O/w1cDnyilFU=');
+define('LINE_MESSAGE_CHANNEL_SECRET','572a7adea7a0959295e21cb626dae011');
+define('LINE_MESSAGE_ACCESS_TOKEN','UNACfqO1IKjufn4f6OfHZPuXnlKXsQBXgSd0Vl7uE+O2YuDAlk1obk36GW9D6WtGtLA952UKN+WigumQWopa81HhPgeoreDOyw+MOjdcQi6l3MeZt++4skzCQ8zdtmbIyCY/15AZOWKxKw1VGdep0wdB04t89/1O/w1cDnyilFU=');
 
 
 class GetMessageController extends Controller
