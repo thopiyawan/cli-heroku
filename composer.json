@@ -49,6 +49,10 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
+
+        "post-install-cmd": [
+            "ComposerScript\\Installer::postInstall"
+        ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
