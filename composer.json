@@ -52,11 +52,9 @@
 
         "post-install-cmd": [   
             "ComposerScript\\Installer::postInstall",
-            "php artisan vendor:publish --tag=public --force",
-            "php artisan vendor:publish",
-            "php artisan migrate",
-            "Illuminate\\Foundation\\ComposerScripts::postUpdate",
-            "php artisan optimize"
+            "php artisan clear-compiled",
+            "php artisan optimize",
+            "chmod -R 777 public/"
         ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
