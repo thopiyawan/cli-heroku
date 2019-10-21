@@ -51,7 +51,7 @@
     "scripts": {
 
         "post-install-cmd": [   
-            "ComposerScript\\Installer::postInstall"
+            "ComposerScript\\Installer::postInstall",
             "php artisan vendor:publish --tag=public --force",
             "php artisan vendor:publish",
             "php artisan migrate",
