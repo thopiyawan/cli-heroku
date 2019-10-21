@@ -50,11 +50,12 @@
     "prefer-stable": true,
     "scripts": {
 
-        "post-install-cmd": [
-            "ComposerScript\\Installer::postInstall"
-            "php artisan clear-compiled",
-            "php artisan optimize",
-            "chmod -R 777 public/"
+        "post-install-cmd": [    
+            "php artisan vendor:publish --tag=public --force",
+            "php artisan vendor:publish",
+            "php artisan migrate",
+            "Illuminate\\Foundation\\ComposerScripts::postUpdate",
+            "php artisan optimize"
         ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
